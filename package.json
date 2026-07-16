@@ -1,0 +1,25 @@
+{
+  "name": "lint-katex-ipynb",
+  "version": "1.0.0",
+  "description": "Lint KaTeX-compatible math in Jupyter notebook Markdown cells.",
+  "main": "./src/cli.mjs",
+  "scripts": {
+    "test": "node --test"
+  },
+  "bin": {
+    "lint-katex-ipynb": "./bin/lint-katex-ipynb.mjs"
+  },
+  "keywords": [
+    "ipynb",
+    "katex",
+    "markdownlint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fast-glob": "3.3.3",
+    "katex": "0.12.0",
+    "markdownlint": "0.40.0"
+  }
+}
