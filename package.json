@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Lint KaTeX-compatible math in Jupyter notebook Markdown cells.",
   "main": "./src/cli.mjs",
+  "files": [
+    "bin",
+    "src"
+  ],
   "scripts": {
     "test": "node --test"
   },
@@ -16,10 +20,17 @@
   ],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmichel/lint-katex-ipynb.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "type": "module",
   "dependencies": {
     "fast-glob": "3.3.3",
-    "katex": "0.12.0",
+    "katex": "0.17.0",
     "markdownlint": "0.40.0"
   }
 }

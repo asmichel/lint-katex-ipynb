@@ -5,8 +5,21 @@ errors. It uses markdownlint's native micromark math tokens, so it intentionally
 checks only `$...$` and `$$...$$` math and ignores LaTeX `\(...\)` and `\[...\]`
 delimiters.
 
+## Installation
+
+Add the versioned GitHub release as a development dependency:
+
 ```sh
-lint-katex-ipynb notebook.ipynb "notes/**/*.ipynb"
+npm install --save-dev https://github.com/asmichel/lint-katex-ipynb/releases/download/v1.0.0/lint-katex-ipynb-1.0.0.tgz
+```
+
+The installed `lint-katex-ipynb` executable is available to package scripts or
+through `npx`.
+
+## Usage
+
+```sh
+npx lint-katex-ipynb notebook.ipynb "notes/**/*.ipynb"
 ```
 
 Diagnostics are printed as:
